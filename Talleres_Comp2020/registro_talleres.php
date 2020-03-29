@@ -1,4 +1,7 @@
-
+<?php
+  //si no esta logueado mandarlo al index principal
+  session_start();  if (!isset($_SESSION["logueado"])){ header("Location:index.html"); exit(); }
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -56,11 +59,10 @@
 		<!--======================================== Links de navegación ========================================-->
 		<nav class="full-reset navigation">
 			<ul class="full-reset list-unstyled">
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="inscripcion.html">Inscripción</a></li>
+				<li><a href="inicio.php">Inicio</a></li>
 				<li><a href="revisar_pago.php">Revisar Pagos</a></li>
-				<li><a href="registro_taller.html">Registro Talleres</a></li>
-				<li><a href="asignacion_taller.php">Asignación Talleres</a></li>
+				<li><a href="registro_talleres.php">Registro Talleres</a></li>
+				<li><a href="logout.php">Logout</a></li>
 			</ul>
 		</nav>
 		<!--======================================== Boton menu mobil ========================================

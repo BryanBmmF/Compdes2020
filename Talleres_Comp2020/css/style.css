@@ -1186,6 +1186,22 @@ button {
   .wrap-input100 .dropDownSelect2 .select2-dropdown {
     width: calc(100% + 2px) !important;
   }
+
+  .portada{
+    background: url(assets/images/icons/compdes_ico.png) no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100% ;
+    text-align: center;
+  
+ }
+
+
+
+}
   
   
   

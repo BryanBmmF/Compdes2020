@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login Compdes 2020</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="assets/images/icons/compdes_ico.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" href="css/style.css">
+<!--===============================================================================================-->
+<!--Funcionamiento de toastr-->
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+<link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" >
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+</head>
+<body>
+	<!--======================================== Boton ir arriba ========================================
+	-->
+	<i class="btn-up fa fa-arrow-circle-o-up hidden-xs"></i>
+	<!--======================================== Navegación ========================================-->
+	<header class="full-reset header">
+		<!--======================================== Logo(Nombre INS) ========================================-->
+		<div class="full-reset logo">
+			<span class="hidden-lg hidden-md"> COMPDES</span>
+			<span class="hidden-xs hidden-sm"> COMPDES 2020 USAC-CUNOC GUATEMALA</span>
+		</div>
+		<!--======================================== Links de navegación ========================================-->
+		<nav class="full-reset navigation">
+			<ul class="full-reset list-unstyled">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="inscripcion.html">Inscripción</a></li>
+                <li><a href="asignacion_taller.php">Asignación Talleres</a></li>
+                <li><a href="login.html">Login</a></li>       
+			</ul>
+		</nav>
+		<!--======================================== Boton menu mobil ========================================
+		-->
+		<a href="#" class=" hidden-sm hidden-md hidden-lg pull-right button-menu-mobile show-close-menu-m"><i class="fa fa-ellipsis-v"></i></a>
+    </header>
+    <div class="container-contact100">
+		<div class="wrap-contact100">
+			    <!-- Inicio de Formulario con la Informacion solicitada-->
+                <form id="Form_1" class="contact100-form validate-form" action="login.php" method="POST">
+                    <h3><strong>Inicio de Sesión COMPDES 2020</strong></h3>
+                    <label class="label-input100" for="user">Usuario *</label>
+                    <div class="wrap-input100 validate-input" data-validate="Campo Obligatorio">
+                        <input id="user" class="input100" type="text" name="user" placeholder="Nombre de Usuario" value="" required>
+                        <span class="focus-input100"></span>
+                    </div>
+                    <label class="label-input100" for="pass">Contraseña *</label>
+                    <div class="wrap-input100 validate-input" data-validate="Campo Obligatorio">
+                        <input id="pass" class="input100" type="password" name="pass" placeholder="Combina numeros y letras " value="" required>
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div id="result-reg" class="col-md-10 offset-md-5">
+                        <!-- Respuesta de registro ajax-->
+                    </div>
+                    <div class="container-contact100-form-btn">
+                        <button type="submit" class="contact100-form-btn">	
+                            Iniciar Sesión
+                        </button>			
+                    </div>
+                </form>
+			<!-- Fin de Formulario y envio del Registro por Metodo Post-->
+
+			<!-- Informacion de Compdes2020-->
+			<div class="contact100-more flex-col-c-m" style="background-image: url('assets/images/bg-01.jpg');">
+				
+				<div class="dis-flex size1 p-b-47">
+					<div class="txt1 p-r-25">
+						<span class="lnr lnr-earth"></span>
+					</div>
+					<div class="flex-col size2">
+						<span class="txt1 p-b-20">
+							Sitio Web de la Sede:
+						</span>
+						<span class="txt3">
+							<a href="http://ingenieria.cunoc.usac.edu.gt/portal/" style="color:rgb(255, 255, 255);"> Ingeniería Cunoc</a>	
+						</span>
+					</div>
+				</div>
+
+				<div class="dis-flex size1 p-b-47">
+					<div class="txt1 p-r-25">
+						<span class="lnr lnr-pointer-right"></span>
+					</div>
+					<div class="flex-col size2">
+						<span class="txt1 p-b-20">
+							Sigenos en 
+                        </span>
+						<span class="txt3">
+                            <ul class="list-unstyled links-footer">
+                                <li><a href="#!" class="open-link-newTab"><i class="fa fa-facebook"></i> &nbsp; Facebook</a></li>
+                            </ul>
+                        </span>
+                        
+					</div>
+                </div>
+                <div class="dis-flex size1 p-b-47">
+					<div class="txt1 p-r-25">
+						<span class="lnr lnr-phone-handset"></span>
+					</div>
+					<div class="flex-col size2">
+						<span class="txt1 p-b-20">
+							Teléfono:
+						</span>
+						<span class="txt3" style="color:rgb(255, 255, 255);">
+							(+502)7873 0000 ext 2267  
+						</span>
+					</div>
+				</div>
+                <div class="dis-flex size1 p-b-47">
+                    <span class="txt1 p-b-20">
+                        <div class="full-reset footer-copyright"><i class="fa fa-copyright"></i> 2020 Compdes USAC-CUNOC</div>
+                    </span>
+					
+				</div>
+            </div>
+        </div>
+	</div>	
+    <!--======================================== Pie de pagina ========================================-->
+
+
+	<div id="dropDownSelect1"></div>
+<!-- Script Para Resetear Formulario cada vez que se cargue la pagina-->	
+	<script>
+		// cuando se muestre la página
+		window.addEventListener('pageshow', function(event) {
+    	// borra el formulario (asumiendo que sólo hay uno; si hay más, especifica su Id)
+    	document.querySelector("form").reset();
+		});
+	</script>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+
+		$(".js-select2").each(function(){
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+		})
+		$(".js-select2").each(function(){
+			$(this).on('select2:open', function (e){
+				$(this).parent().next().addClass('eff-focus-selection');
+			});
+		});
+		$(".js-select2").each(function(){
+			$(this).on('select2:close', function (e){
+				$(this).parent().next().removeClass('eff-focus-selection');
+			});
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics 
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+    -->
+<!-- Realizando peticion al servidor-->
+<script>
+	/* enviamos los datos del form */	
+	$('#Form_1').submit(function (ev) {
+  		$.ajax({
+    		type: $('#Form_1').attr('method'), 
+    		url: $('#Form_1').attr('action'),
+    		data: $('#Form_1').serialize(),
+    		success: function (data) {
+				//alert('Datos enviados !!!');
+				$("#result-reg").html(data)
+			},
+			complete : function(xhr, status) {
+        		document.getElementById("user").value = "";
+				document.getElementById("pass").value = "";
+    		}
+  		});
+ 		 ev.preventDefault();
+	});
+
+</script>
+	
+	
+</body>
+</html>
